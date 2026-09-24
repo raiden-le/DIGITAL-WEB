@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas en Línea - Discos Duros</title>
+    <link rel="stylesheet" href="productos.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>VENTAS EN LÍNEA</h1>
+            <button id="btn-carrito" class="btn-carrito">
+                🛒 Carrito <span id="contador-carrito">0</span>
+            </button>
+        </div>
+        <hr>
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="#" class="active">Ventas en Línea</a></li>
+                <li><a href="#">Ventas por Catálogo</a></li>
+                <li><a href="#">Ventas por Delivery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Catálogo de Discos Duros</h2>
+        <div class="table-container">
+            <table class="productos-table">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Productos</th>
+                        <th>Marca</th>
+                        <th>Capacidad</th>
+                        <th>Tipo</th>
+                        <th>Precio</th>
+                        <th>Imagen</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>A001</td>
+                        <td>Disco Duro</td>
+                        <td>Western Digital</td>
+                        <td>1TB</td>
+                        <td>SSD</td>
+                        <td class="precio">S/. 1600</td>
+                        <td><img src="disco/37.jpg" alt="Disco Duro Western Digital"></td>
+                        <td><button class="btn-agregar">Agregar</button></td>
+                    </tr>
+                    <tr>
+                        <td>A002</td>
+                        <td>Disco Duro</td>
+                        <td>Western Seagate</td>
+                        <td>2TB</td>
+                        <td>HDD</td>
+                        <td class="precio">S/. 150</td>
+                        <td><img src="disco/38.jpg" alt="Disco Duro Seagate"></td>
+                        <td><button class="btn-agregar">Agregar</button></td>
+                    </tr>
+                    <tr>
+                        <td>A003</td>
+                        <td>Disco Duro</td>
+                        <td>Kingston</td>
+                        <td>2TB</td>
+                        <td>SSD</td>
+                        <td class="precio">S/. 180</td>
+                        <td><img src="disco/39.jpg" alt="Disco Duro Kingston"></td>
+                        <td><button class="btn-agregar">Agregar</button></td>
+                    </tr>
+                    <tr>
+                        <td>A004</td>
+                        <td>Disco Duro</td>
+                        <td>Samsung</td>
+                        <td>2TB</td>
+                        <td>SSD</td>
+                        <td class="precio">S/. 190</td>
+                        <td><img src="disco/40.jpg" alt="Disco Duro Samsung"></td>
+                        <td><button class="btn-agregar">Agregar</button></td>
+                    </tr>
+                    <tr>
+                        <td>A005</td>
+                        <td>Disco Duro</td>
+                        <td>Corsair</td>
+                        <td>2TB</td>
+                        <td>SSD</td>
+                        <td class="precio">S/. 130</td>
+                        <td><img src="disco/41.jpg" alt="Disco Duro Corsair"></td>
+                        <td><button class="btn-agregar">Agregar</button></td>
+                    </tr>
+                    <tr>
+                        <td>A006</td>
+                        <td>Disco Duro</td>
+                        <td>Western Seagate</td>
+                        <td>4TB</td>
+                        <td>SSD</td>
+                        <td class="precio">S/. 500</td>
+                        <td><img src="disco/37.jpg" alt="Disco Duro Seagate"></td>
+                        <td><button class="btn-agregar">Agregar</button></td>
+                    </tr>
+                    <tr>
+                        <td>A007</td>
+                        <td>Disco Duro</td>
+                        <td>Western Seagate</td>
+                        <td>2TB</td>
+                        <td>HDD</td>
+                        <td class="precio">S/. 150</td>
+                        <td><img src="disco/39.jpg" alt="Disco Duro Seagate"></td>
+                        <td><button class="btn-agregar">Agregar</button></td>
+                    </tr>
+                    <tr>
+                        <td>A008</td>
+                        <td>Disco Duro</td>
+                        <td>Kingston</td>
+                        <td>4TB</td>
+                        <td>SSD</td>
+                        <td class="precio">S/. 480</td>
+                        <td><img src="disco/40.jpg" alt="Disco Duro Kingston"></td>
+                        <td><button class="btn-agregar">Agregar</button></td>
+                    </tr>
+                    <tr>
+                        <td>A009</td>
+                        <td>Disco Duro</td>
+                        <td>Samsung</td>
+                        <td>4TB</td>
+                        <td>SSD</td>
+                        <td class="precio">S/. 390</td>
+                        <td><img src="disco/41.jpg" alt="Disco Duro Samsung"></td>
+                        <td><button class="btn-agregar">Agregar</button></td>
+                    </tr>
+                    <tr>
+                        <td>A010</td>
+                        <td>Disco Duro</td>
+                        <td>Corsair</td>
+                        <td>4TB</td>
+                        <td>SSD</td>
+                        <td class="precio">S/. 630</td>
+                        <td><img src="disco/42.jpg" alt="Disco Duro Corsair"></td>
+                        <td><button class="btn-agregar">Agregar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- Panel Lateral del Carrito de Compras -->
+    <div id="carrito-modal" class="carrito-modal">
+        <div class="carrito-contenido">
+            <button id="cerrar-carrito" class="cerrar-carrito">&times;</button>
+            <h3>Tu Carrito de Compras</h3>
+            <div id="lista-carrito">
+                <!-- Se llenará con JavaScript -->
+            </div>
+            <div class="carrito-footer">
+                <p>Total: <span id="total-carrito">S/. 0.00</span></p>
+                <button id="btn-comprar" class="btn-comprar">Proceder a Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="productos.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+/* --- Estilos Generales --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+}
+
+header hr {
+    border: 0;
+    height: 2px;
+    background: #00d2ff;
+    width: 50%;
+    margin: 10px auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #00d2ff;
+}
+
+.padre {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* --- Estilos para Hijo 1, Hijo 2 e Hijo 3 --- */
+.hijo1, .hijo2, .hijo3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.nieto, .nieto2, .nieto3 {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.nieto:hover, .nieto2:hover, .nieto3:hover {
+    transform: translateY(-5px);
+}
+
+.nieto h2, .nieto2 h2, .nieto3 h2 {
+    font-size: 1.1rem;
+    color: #1e3c72;
+    margin-bottom: 12px;
+}
+
+.nieto img, .nieto2 img, .nieto3 img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+.nieto p, .nieto2 p, .nieto3 p {
+    font-size: 0.9rem;
+    color: #555;
+    text-align: left;
+}
+
+/* --- Estilos para el HIJO 4 (Galería 3x2: 3 arriba, 3 abajo) --- */
+.hijo4 {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.hijo4 h2 {
+    font-size: 1.8rem;
+    color: #1e3c72;
+    margin-bottom: 25px;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas exactas */
+    gap: 20px; /* Espacio estético entre cuadros */
+}
+
+.cuadro-foto {
+    position: relative;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    opacity: 0; /* Preparado para animación JS */
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
+}
+
+.cuadro-foto.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.cuadro-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* Efecto llamativo al pasar el cursor */
+.cuadro-foto:hover img {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
+
+/* Footer */
+.pie {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e3c72;
+    color: white;
+    margin-top: 40px;
+}

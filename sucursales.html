@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestras Sucursales</title>
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome para Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="sucursales.css">
+</head>
+<body>
+
+  <!-- Navegación -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo"><i class="fa-solid fa-store"></i> DIGITAL</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sucursales.html" class="active">Sucursales</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Encuentra tu Sucursal más Cercana</h1>
+    <p>Estamos listos para atenderte con la mejor calidad y servicio. Visítanos en cualquiera de nuestras ubicaciones.</p>
+  </section>
+
+  <!-- Contenido Principal -->
+  <main class="main-container">
+    
+    <!-- Filtros de búsqueda -->
+    <div class="search-bar">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" id="searchInput" placeholder="Buscar por distrito, dirección o ciudad...">
+    </div>
+
+    <!-- Layout de Lista + Mapa -->
+    <div class="locations-layout">
+      
+      <!-- Contenedor de Tarjetas -->
+      <div class="cards-container" id="cardsContainer">
+        <!-- Las tarjetas se generan dinámicamente con JS -->
+      </div>
+
+      <!-- Mapa interactivo -->
+      <div class="map-container">
+        <iframe 
+          id="mapFrame" 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.966388481335!2d-77.0315!3d-12.1192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDA3JzA5LjEiUyA3N8KwMDEnNTMuNCJX!5e0!3m2!1ses!2spe!4v1600000000000!5m2!1ses!2spe" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 MiMarca - Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="sucursales.js"></script>
+</body>
+</html>
